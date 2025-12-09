@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>да</title>
   <style>
-    * { 
-        margin: 0; 
+  * {
+      margin: 0;
+      padding: 0;
     }
 
-    html, body { 
-        height: 100%; 
+    html, body {
+      height: 100%;
+      overflow: hidden; 
     }
 
-    body { 
-        font-family: impact; 
-        display: flex; 
-        align-items: center; 
+    body {
+      background: url("f.jpg") center/cover no-repeat fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      position: relative;
+    }
+
+    .g {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: 1;
     }
     
     .q {
-        text-align: center;
-        width: 100%;
-        font-size: min(10vmin, 80rem); 
-        font-weight: 900;
-    }
-    
-    h1 { 
-        line-height: 0.35;
-        letter-spacing: -0.1em;
-    }
+      width: 100%;
+      max-width: 25rem;
+      padding: clamp(0.1rem, 15vw, 20rem);
+      background: url("l.png") center/cover no-repeat;
+      z-index: 0;
+    } 
   </style>
 </head>
 <body>
-    <div class="q">
-      <p>полина</p>
-      <h1>идинахуй</h1>
-    <div>
-  <div>
+  <img class="g" src="g.gif">
+  <div class="q"></div>
 </body>
 </html>
