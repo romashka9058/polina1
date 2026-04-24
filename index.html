@@ -3,42 +3,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>да</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100vh;
-      overflow: hidden; 
-    }
-
-    body {
-      background: url("f.jpg");
-      display: flex;
-      justify-content: center;
-      align-items: center;    
-      position: relative;
-    }
-
-    .g {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-    }
-    
-    .q {
-      width: 100vw;
-      max-height: 100vh;
-      padding: 15vw;
-      background: url("l.png") center/cover no-repeat;
-    } 
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+body {
+  background: url("f.jpg");
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+div {
+  width: 100dvw; 
+  height: 100dvh;
+  background: url("l.png") center/cover no-repeat;
+  background-size: 90% 20%;
+} 
   </style>
 </head>
 <body>
-  <img class="g" src="g.gif">
-  <div class="q"></div>
+  <img src="g.gif">
+  <div></div>
 </body>
 </html>
