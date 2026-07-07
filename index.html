@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru" translate="no">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
-    <meta name="color-scheme" content="light only">
-    <meta name="supported-color-schemes" content="light">
-    <meta name="theme-color" content="#ffffff">
-  <title>да</title>
-</head>
+ <html lang="ru" translate="no">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
+	    <meta name="google" content="notranslate">
+	    <meta name="color-scheme" content="light only">
+	    <meta name="supported-color-schemes" content="light">
+	    <meta name="theme-color" content="#ffffff">
+	    <link rel="stylesheet" href="https://romashka9058.github.io/style/main.css"> 
+	    
+		  <title>да</title>
 
-<body style="margin: 0;background: url('f.jpg');justify-content: center;display: flex;">
-  <img src="g.gif" style="position: absolute;width: 100vw; height: 100dvh;">
-  <img src="l.png" style="width: 90vw;height: 100dvh;object-fit: contain;transform: scaley(1.6);z-index: -1;">
-  <img src="l copy.png" style="width: 90vw;height: 100dvh;object-fit: contain;position: absolute;transform: scaley(1.6);">
-</body>
+		  <style>
+        body {
+          margin: 0;
+          background: url('f.jpg');
+          justify-content: center;
+          display: flex;
+          overflow-y: hidden;
+        }
+
+        img:nth-child(1) {
+          position: absolute;
+          width: 100vw;
+          height: min(100vh, 66.6rem);
+        }
+
+        img:nth-child(2) {
+          width: min(90vw, 60rem);
+          height: 100dvh;
+          object-fit: contain;
+          transform: scaley(1.6);
+          z-index: -1;
+        }
+
+        img:nth-child(3) {
+          width: min(90vw, 60rem);
+          height: 100dvh;
+          object-fit: contain;
+          position: absolute;
+          transform: scaley(1.6);
+        }
+      </style>
+
+	</head>
+
+  <body>
+    <img src="g.gif">
+    <img src="l.png">
+    <img src="l copy.png">
+  </body>
 
 </html>
