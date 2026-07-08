@@ -12,34 +12,27 @@
 	    
 		  <title>да</title>
 
-		  <style>
+      <style>
         body {
-          margin: 0;
           background: url('f.jpg');
           justify-content: center;
+          align-items: center; 
           display: flex;
-          overflow-y: hidden;
+          overflow: hidden;
+        }
+        body::after {
+          content:"";
+          position:fixed;
+          inset:0;
+          background: url(g.gif);
+          background-size: 100% 66.6%;
+          background-repeat: no-repeat;
         }
 
-        img:nth-child(1) {
-          position: absolute;
-          width: 100vw;
-          height: min(100vh, 66.6rem);
-        }
-
-        img:nth-child(2) {
+        img {
           width: min(90vw, 60rem);
-          height: 100dvh;
+          height: 40dvh;
           object-fit: contain;
-          transform: scaley(1.6);
-          z-index: -1;
-        }
-
-        img:nth-child(3) {
-          width: min(90vw, 60rem);
-          height: 100dvh;
-          object-fit: contain;
-          position: absolute;
           transform: scaley(1.6);
         }
       </style>
@@ -47,9 +40,8 @@
 	</head>
 
   <body>
-    <img src="g.gif">
-    <img src="l.png">
-    <img src="l copy.png">
+    <img src="l.png" style="z-index: -1;">
+    <img src="l copy.png" style="position: absolute;">
   </body>
 
 </html>
